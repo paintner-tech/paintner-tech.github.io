@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Python Logging – Praxis
+title: Rotating Logger
 ---
 
-# Python Logging – Praxis
+# Rotating Logger
 
 ## Beschreibung
 Ein Rotating Logger sorgt dafür, dass Logdateien nicht unendlich groß werden.
