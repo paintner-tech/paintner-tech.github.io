@@ -46,6 +46,9 @@ Aufruf mit Anzahl Logdateien = 5 und maximaler Größe = 10 MB
 ```python
 def main():
     global LOGGER
+
+    log_path = "/pfad/dateiname"
+
     LOGGER = setup_rotating_logger(log_path, max_mb=10, backups=5)
     LOGGER.info("######## NEUSTART lsyncd-wrapper pid=%s ########", os.getpid())
 
