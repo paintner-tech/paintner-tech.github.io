@@ -1,5 +1,3 @@
-index.md
-
 Praxisnahe IT-Dokumentation
 Willkommen auf meiner Seite!
 
