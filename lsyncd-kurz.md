@@ -53,7 +53,7 @@ Das Verzeichnis /data/master wird vom eigenen Host zum Hosts slave_host replizie
 - lsyncd läuft, aber rsync scheitert still im Hintergrund
 - keine Monitoring-Prüfung eingebaut
 
-## Beispiel Aufruf aus Python
+## Beispielhafter Aufruf aus Python
 ```python
 OUT_LUA   = "/pfad_zur_konnfiguration/lsync.path.lua"
 
