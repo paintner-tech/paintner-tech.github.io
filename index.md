@@ -18,4 +18,5 @@ Ich arbeite seit Jahren mit Linux-Systemen in produktiven Umgebungen und dokumen
 - [lsyncd – Kurz & kompakt](lsyncd-kurz.md)
 
 
-## Kontakt: paintner-s@gmx.de
+## Kontakt
+paintner-s@gmx.de
