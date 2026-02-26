@@ -1,4 +1,6 @@
-Praxisnahe IT-Dokumentation
+[Home](index.md) · [Dokus](#dokus) · [Kontakt](#kontakt)
+
+# Praxisnahe IT-Dokumentation
 Willkommen auf meiner Seite!
 
 Hier sammle ich praxisnahe Anleitungen und Erfahrungen rund um:
@@ -12,8 +14,8 @@ Hier sammle ich praxisnahe Anleitungen und Erfahrungen rund um:
 Über mich
 Ich arbeite seit Jahren mit Linux-Systemen in produktiven Umgebungen und dokumentiere hier Lösungen, die in der Praxis funktionieren – nicht nur in Tutorials.
 
-Artikel
+## Artikel
 - [lsyncd – Kurz & kompakt](lsyncd-kurz.md)
 
 
-Kontakt: paintner-s@gmx.de
+## Kontakt: paintner-s@gmx.de
