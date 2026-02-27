@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Rotating Logger
+title: Konfiguration auslesen und auswerten
 ---
 
 # Konfiguration auslesen und auswerten
