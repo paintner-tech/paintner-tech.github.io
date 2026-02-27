@@ -61,6 +61,7 @@ Statt eine Datei mehrfach mit `final.sh`, `final2.sh`, `wirklich_final.sh` zu sp
 
 - [Git – Grundlagen](grundlagen_git.md)
 - [Git – Grundlagen](/gitdoku/grundlagen_git/)
+- [Git – Grundlagen](./grundlagen_git)
 
 ---
 
