@@ -59,7 +59,7 @@ Statt eine Datei mehrfach mit `final.sh`, `final2.sh`, `wirklich_final.sh` zu sp
 
 ## Artikel
 
-- [lsyncd – Kurz & kompakt](lsyncd-kurz.md)
+- [Grundlagen](grundlagen_git.md)
 
 ---
 
