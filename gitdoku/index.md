@@ -57,9 +57,9 @@ Statt eine Datei mehrfach mit `final.sh`, `final2.sh`, `wirklich_final.sh` zu sp
 
 ---
 
-## Inhalte
+## Artikel
 
-- Zusammenfassung - Grundlagen 
+- [lsyncd – Kurz & kompakt](lsyncd-kurz.md)
 
 ---
 
