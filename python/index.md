@@ -28,5 +28,6 @@ Funktionen wie ein rotierender Logger müsste man in Bash erst aufwendig selbst 
 
 ## Inhalte
 - [Logging – einfacher Rotating Logger](logging.html)
+- [Konfiguration einlesen – ein einfaches Bespiel](read_config.html)
   
 
