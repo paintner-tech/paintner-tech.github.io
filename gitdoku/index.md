@@ -59,7 +59,7 @@ Statt eine Datei mehrfach mit `final.sh`, `final2.sh`, `wirklich_final.sh` zu sp
 
 ## Artikel
 
-- [Git – Grundlagen](gitdoku/grundlagen_git.md)
+- [Git – Grundlagen](grundlagen_git.md)
 
 ---
 
