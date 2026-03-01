@@ -15,7 +15,10 @@ Hier sammle ich praxisnahe Anleitungen und Erfahrungen rund um:
 Über mich
 Ich arbeite seit Jahren mit Linux-Systemen in produktiven Umgebungen und dokumentiere hier Lösungen, die in der Praxis funktionieren – nicht nur in Tutorials.
 
-## Artikel
+## Projekte
+- comming soon
+  
+## Technische Dokumentationen
 - [lsyncd – Kurz & kompakt](lsyncd-kurz.md)
 - [Python – Praxis-Doku](python/index.md)
 - [Git – Praxis-Doku](gitdoku/index.md)
