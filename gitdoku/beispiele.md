@@ -1,0 +1,94 @@
+---
+layout: default
+title: Git Beispiel aus der Praxis
+---
+
+[Home](/) . [Technische Dokumentation](/#technische-dokumentation)
+
+
+# Globale Identität setzen
+```bash
+ptops@pt-lab01:/var/repos$ git config --global user.email "ptops.example.com"
+ptops@pt-lab01:/var/repos$ git config --global user.name "ptops"
+```
+
+
+# git - Repo clonen
+```
+ptops@pt-lab01:/var/repos$ sudo git clone root@192.0.2.10:/opt/warmstandby
+Klone nach 'warmstandby' …
+root@192.0.2.10's password:
+remote: Enumerating objects: 29, done.
+remote: Counting objects: 100% (29/29), done.
+remote: Compressing objects: 100% (29/29), done.
+remote: Total 29 (delta 1), reused 0 (delta 0), pack-reused 0
+Empfange Objekte: 100% (29/29), 382.23 KiB | 21.23 MiB/s, fertig.
+Löse Unterschiede auf: 100% (1/1), fertig.
+ptops@pt-lab01:/var/repos$
+```
+
+# Remote host konfigurieren
+```bash
+ptops@pt-lab01:/var/repos/warmstandby$ git remote add origin git@github.com:paintner-tech/warmstandby.git
+```
+
+# Remote host ändern
+--> alten Remotehost löschen und neuen anlegen
+```
+ptops@pt-lab01:/var/repos/warmstandby$ git remote remove origin
+ptops@pt-lab01:/var/repos/warmstandby$ git remote add origin git@github.com::paintner-tech/warmstandby.git
+```
+
+# Git Repository von Linux-Host nach GitHub pushen (SSH über Port 443)
+
+## ssh Konfigurieren
+* config in .ssh mit folgendem Inhalt anlegen
+* Key muss vorhanden sein 
+
+```bash
+Host github.com
+  HostName ssh.github.com
+  Port 443
+  User git
+  IdentityFile ~/.ssh/id_ed25519
+```
+Test
+```bash
+ptops@pt-lab01:/var/repos/warmstandby$ ssh -T git@github.com
+Hi paintner-tech! You've successfully authenticated, but GitHub does not provide shell access.
+ptops@pt-lab01:/var/repos/warmstandby$
+```
+
+## Git-Remote korrekt konfigurieren
+
+Remote Anzeige 
+``` bash
+ptops@pt-lab01:/var/repos/warmstandby$ git remote -v
+origin  git@github.com:paintner-tech/warmstandby.git (fetch)
+origin  git@github.com:paintner-tech/warmstandby.git (push)
+```
+ Remote konfigurieren
+```
+git remote remove origin
+git remote add origin git@github.com:paintner-tech/warmstandby.git
+```
+
+Branch auf main setzen
+```bash
+ptops@pt-lab01:/var/repos/warmstandby$ git branch -M main
+``` 
+
+Upstream setzte
+```bash
+ptops@pt-lab01:/var/repos/warmstandby$ git branch --set-upstream-to=origin/main main
+Branch 'main' folgt nun 'origin/main'.
+```
+
+Ab jetzt kann das Repo gepusht werden
+```
+ptops@pt-lab01:/var/repos/warmstandby$ git push
+Everything up-to-date
+ptops@pt-lab01:/var/repos/warmstandby$
+
+```
+
