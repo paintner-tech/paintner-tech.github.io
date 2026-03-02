@@ -53,7 +53,7 @@ Wants= definiert eine weiche Abhängigkeit. Wenn diese Unit gestartet wird, vers
 Aber:
 Wenn die gewünschte Unit fehlschlägt, läuft der aktuelle Service trotzdem weiter.
 
-** Merksatz **
+> ** Merksatz **
 „Bitte starte das mit – aber wenn es nicht klappt, mache trotzdem weiter.“
 
 Beispiel
@@ -76,7 +76,7 @@ Während der Laufzeit
 
 * Wenn die required Unit stoppt oder crasht, wird auch die abhängige Unit gestoppt
 
-** Merksatz **
+> ** Merksatz **
 „Ohne dich starte ich nicht – und wenn du stirbst, gehe ich mit.“
 
 #PartOf=
@@ -94,7 +94,7 @@ PartOf= wirkt nur bei:
 * reload
 Nicht beim Start.
 
-** Merksatz **
+> ** Merksatz **
 „Wenn der Chef stoppt, stoppe ich auch.“
 
 Beispiel im Projekt
