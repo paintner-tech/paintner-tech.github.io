@@ -220,3 +220,6 @@ Beim Stoppen wird das Skript mit down ausgeführt.
 → VIP wird entfernt.
 
 Logik bleibt im Python-Code, systemd übernimmt nur Steuerung.
+
+# Weiterführendes
+
