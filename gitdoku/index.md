@@ -61,7 +61,7 @@ Statt eine Datei mehrfach mit `final.sh`, `final2.sh`, `wirklich_final.sh` zu sp
 ## Artikel
 
 - [Git – Grundlagen](./grundlagen_git)
-- [Git – Beispiele](./beispiele_git)
+- [Git – Beispiele](./beispiele)
 
 ---
 
