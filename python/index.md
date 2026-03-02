@@ -3,6 +3,8 @@ layout: default
 title: Python – Praxis-Doku
 ---
 
+[Home](/) . [Technische Dokumentation](/#technische-dokumentation)
+
 # Python – Praxis-Dokumentation
 
 Hier sammle ich kleine, wiederverwendbare Python-Snippets und Muster, die ich im Alltag nützlich sein können.
