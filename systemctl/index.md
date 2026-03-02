@@ -224,4 +224,3 @@ Logik bleibt im Python-Code, systemd übernimmt nur Steuerung.
 # Weiterführendes
 [Unit-Dateien – Einführung mit Beispielen aus der Praxis](./unit-datei)
 
-[Unit-Dateien – Einführung mit Beispielen aus der Praxis](./unit-datei.md)
