@@ -1,4 +1,4 @@
-[Home](index.md) · [Dokus](#dokus) · [Kontakt](#kontakt)
+[Home](index.md) · [Dokus](#Technische Dokumentationen) · [Kontakt](#kontakt)
 
 # Praxisnahe IT-Dokumentation
 Willkommen auf meiner Seite!
