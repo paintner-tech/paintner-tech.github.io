@@ -57,7 +57,7 @@ systemctl is-active ssh
 echo $?
 ```
 ### Units suchen / auflisten
-``bash
+```bash
 systemctl list-units --type=service
 systemctl list-units --type=service --state=running
 systemctl list-unit-files --type=service
@@ -150,7 +150,7 @@ Die VIP stellt sicher, dass Dienste im Netzwerk stets unter derselben IP-Adresse
 
 ```ini
 [Unit]
-Description=PECOM Virtual IP (VIP)
+Description=Virtual IP (VIP)
 After=network-online.target
 Wants=network-online.target
 PartOf=warmstandby-supervisor.service
@@ -158,8 +158,8 @@ PartOf=warmstandby-supervisor.service
 [Service]
 Type=oneshot
 RemainAfterExit=yes
-ExecStart=/usr/bin/python3 /opt/pecom/warmstandby/bin/vip.py up
-ExecStop=/usr/bin/python3 /opt/pecom/warmstandby/bin/vip.py down
+ExecStart=/usr/bin/python3 /opt/warmstandby/bin/vip.py up
+ExecStop=/usr/bin/python3 /opt/warmstandby/bin/vip.py down
 
 StandardOutput=journal
 StandardError=journal
