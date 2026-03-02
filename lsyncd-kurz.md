@@ -2,6 +2,7 @@
 layout: default
 title: lsyncd – Kurz & kompakt
 ---
+[Home](/) . [Technische Dokumentation](/#technische-dokumentation)
 
 # lsyncd – Kurz & kompakt
 
