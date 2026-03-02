@@ -1,6 +1,6 @@
 ---
 layout: default
-title: <Unit-Name>.service
+title: Unit-Datei
 ---
 
 [Home](/) . [Technische Dokumentation](/#technische-dokumentation)
