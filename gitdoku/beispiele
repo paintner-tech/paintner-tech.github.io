@@ -25,4 +25,20 @@ remote: Total 29 (delta 1), reused 0 (delta 0), pack-reused 0
 Empfange Objekte: 100% (29/29), 382.23 KiB | 21.23 MiB/s, fertig.
 Löse Unterschiede auf: 100% (1/1), fertig.
 ptops@pt-lab01:/var/repos$
-``
+```
+
+# Remote host konfigurieren
+```bash
+ptops@pt-lab01:/var/repos/warmstandby$ git remote add origin git@github.com:paintner-tech/warmstandby.git
+```
+
+# Remote host ändern
+--> alten Remotehost löschen und neuen anlegen
+```
+ptops@pt-lab01:/var/repos/warmstandby$ git remote remove origin
+ptops@pt-lab01:/var/repos/warmstandby$ git remote add origin git@github.com::paintner-tech/warmstandby.git
+```
+
+
+
+
