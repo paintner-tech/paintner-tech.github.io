@@ -222,4 +222,6 @@ Beim Stoppen wird das Skript mit down ausgeführt.
 Logik bleibt im Python-Code, systemd übernimmt nur Steuerung.
 
 # Weiterführendes
+[Unit-Dateien - Einführung mit Beispielen aus der Praxis](systemctl/unit-datei.md)
+
 
