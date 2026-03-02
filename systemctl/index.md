@@ -40,24 +40,24 @@ Typische Aufgaben:
 ## Typische Befehle
 
 ### Start / Stop / Restart
-```ini
+```bash
 sudo systemctl start ssh
 sudo systemctl stop ssh
 sudo systemctl restart ssh
 
 ### Autostart aktivieren/deaktivieren
-'''ini
+'''bash
 sudo systemctl enable ssh
 sudo systemctl disable ssh
 ```
 
 ### Läuft der Service wirklich?
-```ini
+```bash
 systemctl is-active ssh
 echo $?
 ```
 ### Units suchen / auflisten
-``ìni
+``bash
 systemctl list-units --type=service
 systemctl list-units --type=service --state=running
 systemctl list-unit-files --type=service
