@@ -19,7 +19,6 @@ Ich arbeite seit Jahren mit Linux-Systemen in produktiven Umgebungen und dokumen
 - comming soon
   
 ## Technische Dokumentationen
-- [lsyncd – Kurz & kompakt](lsyncd-kurz.md)
 - [Python – Praxis-Doku](python/index.md)
 - [Git – Praxis-Doku](gitdoku/index.md)
 - [systemctl - Einführung mit Beispielen aus der Praxis](systemctl/index.md)
