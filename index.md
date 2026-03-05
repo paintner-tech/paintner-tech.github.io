@@ -21,6 +21,7 @@ Ich arbeite seit Jahren mit Linux-Systemen in produktiven Umgebungen und dokumen
 ## Technische Dokumentationen
 - [Python – Praxis-Doku](python/index.md)
 - [Git – Praxis-Doku](gitdoku/index.md)
+- [Proxmox - Praxis-Doku](proxmox/index.md)
 - [Quick Reference – Cheat Sheets](sammlungen/index.md)
 
 
