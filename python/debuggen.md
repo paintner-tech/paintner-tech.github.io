@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Konfiguration auslesen und auswerten
+title: Python Debugging mit pdb
 ---
 
 [Home](/) · [Technische Dokumentation](/#technische-dokumentation)
 
-# Python Debugging mit pdb
+# Einleitung
 
 Beim Entwickeln von Python-Skripten ist es oft hilfreich, den Programmablauf an einer bestimmten Stelle anzuhalten und sich den aktuellen Zustand des Programms anzusehen.
 
