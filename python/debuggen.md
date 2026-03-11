@@ -3,6 +3,7 @@ layout: default
 title: Konfiguration auslesen und auswerten
 ---
 
+[Home](/) · [Technische Dokumentation](/#technische-dokumentation)
 
 # Python Debugging mit pdb
 
