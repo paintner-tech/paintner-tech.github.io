@@ -73,3 +73,15 @@ superuser  | Superuser
 
 postgres=#
 ```
+
+# Kontrolle welches pg_hba.conf verwendet wird
+```bash
+postgres=#
+postgres=# SHOW hba_file;
+             hba_file
+-----------------------------------
+ /etc/postgresql/16/main/pg_hba.conf/
+(1 row)
+
+postgres=#
+```
