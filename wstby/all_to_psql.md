@@ -13,7 +13,7 @@ psql -p 5631 -d postgres -c "select pg_is_in_recovery();"
 ## Beispiel 
 Db ist nicht hier nicht in Recovery
 ```bash
-rot@wstbyz196tpr11:/opt/pecom/warmstandby/install# sudo -u postgres psql -p 5631 -d postgres -c "select pg_is_in_recovery();"
+rot@wstbyz:/opt/pecom/warmstandby/install# sudo -u postgres psql -p 5631 -d postgres -c "select pg_is_in_recovery();"
  pg_is_in_recovery
 -------------------
  f
