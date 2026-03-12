@@ -11,13 +11,11 @@ title: Warmstandby - PGdb
 Wenn hier f angezeigt wird, dann ist die DB nicht in Recovery. t wurde bedueten Recovery aktiv
 
 ```bash
-rot@wstbyz:/opt/pecom/warmstandby/install# sudo -u postgres psql -p 5631 -d postgres -c "select pg_is_in_recovery();"
+postgres=# select pg_is_in_recovery();
  pg_is_in_recovery
 -------------------
  f
 (1 row)
-
-root@wstbyz196tpr11:/opt/pecom/warmstandby/install#
 ```
 
 ### select * from pg_stat_replication;
