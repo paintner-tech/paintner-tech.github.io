@@ -1,3 +1,9 @@
+---
+layout: default
+title: Warmstandby - PGdb
+---
+[Home](/) . [Technische Dokumentation](/#technische-dokumentation)
+
 
 
 # Installatiion
