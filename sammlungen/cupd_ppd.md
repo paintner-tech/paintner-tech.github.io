@@ -1,19 +1,11 @@
 
 ---
 layout: default
-title: CUPS
+title: CUPS in old linux systems
 ---
 
 [Home](/) . [Technische Dokumentation](/#technische-dokumentation)
 
-
-# CUPS / Kyocera MA3500cifx – Fehlersuche und Einrichtung
-
-## Ausgangslage
-
-Auf einem alten angepassten Linux-System sollte ein neuer Drucker vom Typ **Kyocera ECOSYS MA3500cifx** über CUPS eingebunden werden.
-
-Das System ist sehr alt, daher sind moderne Treiber, Filter oder Upload-Funktionen in der CUPS-GUI nur eingeschränkt oder gar nicht vorhanden.
 
 # PPD-Dateien im alten Linux verstehen
 
