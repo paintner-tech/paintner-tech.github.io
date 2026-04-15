@@ -24,5 +24,6 @@ Diese sind der Herstellerdokumentation bzw. den Installationsunterlagen zu entne
 Das Initialpasswort muss nach dem ersten Login geändert werden.
 
 
-<img width="396" height="401" alt="image" src="https://github.com/user-attachments/assets/03c16da8-e504-4cae-a922-6e8d3e6b1a57" />
+<img width="396" height="401" alt="image" src="https://github.com/user-attachments/assets/6bd0c959-7250-40f0-9123-082aba29405d" />
+
 
