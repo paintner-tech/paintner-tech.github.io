@@ -3,6 +3,8 @@ layout: default
 title: Migration von PegaProx als LXC-Container per Restore eines Backups
 ---
 
+[Home](/) · [Technische Dokumentation](/#technische-dokumentation)
+
 # Einführung: Migration von PegaProx als LXC-Container per Restore eines Backups
 
 In diesem Fall wurde PegaProx nicht neu installiert, sondern durch Wiederherstellung eines bestehenden Proxmox-Backups migriert. Als Ausgangspunkt wurde ein Backup von https://pegaprox.com/ heruntergeladen
