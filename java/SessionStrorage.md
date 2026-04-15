@@ -26,8 +26,8 @@ Diese Daten sollen:
 ---
 
 ## Donwload Source
-[SessionStorage.java herunterladen](SessionStorage.java)
-[HostEntry.java herunterladen](HostEntry.java)
+- [SessionStorage.java herunterladen](SessionStorage.java)
+- [HostEntry.java herunterladen](HostEntry.java)
 # 1. Die Klasse HostEntry
 
 `HostEntry` ist eine einfache Datenklasse.
