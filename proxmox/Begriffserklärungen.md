@@ -9,7 +9,7 @@ title: PegaProx Erkärungen
 # Migration Threshold
 
 Grundidee
-
+![PegaProx Thresold](images/pegaprox_main.jpg)
 PegaProx berechnet für jeden Node einen internen Load Score aus Faktoren wie:
 
 CPU-Auslastung
