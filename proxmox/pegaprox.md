@@ -17,7 +17,8 @@ Ziel ist eine klare, nachvollziehbare Referenz für Installation, Service und Ad
 ## URL
 ```bash
 https://ip-lxc.container:5000
-``
+```
+
 ## Standardusername und Passwort
 Nach der Installation ist der Zugriff mit den werkseitigen Standard-Zugangsdaten möglich.
 Diese sind der Herstellerdokumentation bzw. den Installationsunterlagen zu entnehmen.
