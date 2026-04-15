@@ -3,6 +3,8 @@ layout: default
 title: Eine lokalen Proxmox-Mirror erstellen
 ---
 
+[Home](/) · [Technische Dokumentation](/#technische-dokumentation)
+
 # Einleitung
 In produktiven Umgebungen ist es oft sinnvoll, **lokale Paket-Repositories (Mirror)** zu betreiben.  
 Gerade bei Proxmox-Clustern oder Installationen in abgeschotteten Netzwerken (z.B. Produktionsnetzen ohne direkten Internetzugang) können Updates sonst nur eingeschränkt durchgeführt werden.
