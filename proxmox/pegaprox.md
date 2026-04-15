@@ -31,4 +31,4 @@ Das Initialpasswort muss nach dem ersten Login geändert werden.
 ![PegaProx Main](images/pegaprox_main.jpg)
 
 # Begriffserklärungen
-- [Wichtige Begriffe](pegaprox_lxc.html)
+- [Wichtige Begriffe](./Begriffserklärungen.md)
