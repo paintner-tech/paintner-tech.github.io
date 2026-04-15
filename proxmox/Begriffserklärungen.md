@@ -8,22 +8,22 @@ title: PegaProx Erkärungen
 
 # Migration Threshold
 
-Grundidee
-![PegaProx Thresold](images/pegaprox_main.jpg)
+
+![PegaProx Thresold](images/Threshold.jpg)
+
+## Grundidee
 PegaProx berechnet für jeden Node einen internen Load Score aus Faktoren wie:
 
-CPU-Auslastung
-RAM-Auslastung
-evtl. IO/Storage-Last
-Anzahl laufender VMs/CTs
+* CPU-Auslastung
+* RAM-Auslastung
+* evtl. IO/Storage-Last
+* Anzahl laufender VMs/CTs
 
 Wenn ein Node deutlich stärker belastet ist als ein anderer, prüft PegaProx:
 
-👉 Ist die Differenz größer als der Threshold?
+Ist die Differenz größer als der Threshold? -> Nur dann wird migriert.
 
-Nur dann wird migriert.
-
-Beispiel
+## Beispiel
 
 Angenommen:
 
@@ -40,36 +40,19 @@ Bei Threshold 20 %:
 Bei Threshold 40 %:
 → keine Migration.
 
-Niedriger Threshold (z. B. 5–10 %)
-Vorteil:
-Cluster bleibt sehr gleichmäßig verteilt
-Nachteil:
-viele Migrationen
-unnötige VM-Bewegungen
-mehr Netzwerk-/Storage-Last
-Hoher Threshold (z. B. 40–60 %)
-Vorteil:
-sehr ruhiges System
-kaum Migrationen
-Nachteil:
-Lastspitzen bleiben länger bestehen
-einzelne Nodes können heiß laufen
-Für dein 3-Node-Ceph-Cluster sinnvoll:
-Empfehlung:
+
+## Empfehlung:
 
 15–25 %
 
 Das ist meist ideal für:
 
-stabile Balance
-wenig unnötige Migrationen
-gute Lastverteilung
+* stabile Balance
+* wenig unnötige Migrationen
+* gute Lastverteilung
 
-Deine 20 % sind also ein sehr vernünftiger Wert.
 
-Wichtig:
-
-Threshold betrifft nur:
+## Threshold betrifft nur:
 
 automatische Lastverteilung (Balancing)
 
