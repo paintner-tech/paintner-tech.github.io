@@ -22,3 +22,4 @@ Der Bereich dient als persönliches Nachschlagewerk und Lernarchiv, um Wissen st
 
 Diese Sammlung wird laufend erweitert und ergänzt.
 - [HostEntry und SessionStorage im Zusammenspiel](SessionStorage.html)
+-  [Sessions speichern](./SessionStorage)
