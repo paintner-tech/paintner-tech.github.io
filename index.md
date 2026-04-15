@@ -23,6 +23,7 @@ Ich arbeite seit Jahren mit Linux-Systemen in produktiven Umgebungen und dokumen
 - [Git – Praxis-Doku](gitdoku/index.md)
 - [Proxmox - Praxis-Doku](proxmox/index.md)
 - [Quick Reference – Cheat Sheets](sammlungen/index.md)
+- [JAVA – Bespiele aus der Praxis](java/index.md)
 
 
 ## Kontakt
