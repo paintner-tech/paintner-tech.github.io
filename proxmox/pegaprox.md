@@ -25,8 +25,6 @@ Diese sind der Herstellerdokumentation bzw. den Installationsunterlagen zu entne
 Das Initialpasswort muss nach dem ersten Login geändert werden.
 
 
-<img width="396" height="401" alt="image" src="https://github.com/user-attachments/assets/6bd0c959-7250-40f0-9123-082aba29405d" />
-
 # Node in Wartung versetzten. 
 
 
