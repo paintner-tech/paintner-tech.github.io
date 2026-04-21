@@ -23,9 +23,7 @@ Ein Container ist **kein Tool**, sondern eine Technik.
   - cgroups (Ressourcen)
 
 👉 Kein eigenes Betriebssystem  
-
 👉 Kein eigener Kernel  
-
 👉 Sehr leichtgewichtig
 
 **Merksatz:**  
@@ -68,7 +66,9 @@ root@datsrv1:~# apt install docker.io
 docker run -it ubuntu bash
 
 👉 Image ubuntu wird geladen (falls nicht vorhanden → Download)
+
 👉 daraus wird ein Container gestartet
+
 👉du bist direkt im System drin
 
 
