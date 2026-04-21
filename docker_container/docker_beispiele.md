@@ -7,7 +7,7 @@ title: Docker und Container / Beispiele
 
 # Definitionen (Wiederholung)
 
-> [!TIP]
+
 > Container → laufende Instanz eines Images
 > 
 > Docker → Plattform/Werkzeug zum Erstellen, Verwalten und Ausführen von Containers
