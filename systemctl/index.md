@@ -45,6 +45,8 @@ sudo systemctl start ssh
 sudo systemctl stop ssh
 sudo systemctl restart ssh
 
+```
+
 ### Autostart aktivieren/deaktivieren
 '''bash
 sudo systemctl enable ssh
