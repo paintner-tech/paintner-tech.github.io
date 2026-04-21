@@ -12,7 +12,7 @@ Das ist aber nur die halbe Wahrheit.
 
 ---
 
-## 🧱 Container (das Konzept)
+## Container (das Konzept)
 
 Ein Container ist **kein Tool**, sondern eine Technik.
 
@@ -31,7 +31,7 @@ Container = „Mini-System ohne eigenen Kernel“
 
 ---
 
-## 🐳 Docker (das Tool)
+## Docker (das Tool)
 
 Docker ist eine Software, die Container **einfach nutzbar macht**.
 
@@ -47,7 +47,7 @@ Docker = Werkzeug für Container
 
 ---
 
-## 🔥 Der Unterschied (kurz & klar)
+##  Der Unterschied (kurz & klar)
 
 | Thema        | Container                  | Docker                    |
 |--------------|---------------------------|---------------------------|
