@@ -56,14 +56,13 @@ Docker = Werkzeug für Container
 | Beispiel     | LXC                       | Docker                    |
 
 ---
-## Beispiel
 
-### Docker installieren
+## Docker installieren
 ```bash
 root@datsrv1:~# apt install docker.io
 ```
 
-### Ubuntu container mit docher
+## Docker testen
 docker run -it ubuntu bash
 
 👉 Image ubuntu wird geladen (falls nicht vorhanden → Download)
@@ -93,7 +92,7 @@ root@204c34995ed3:/#
 exit
 ```
 
-
+## Beispiele zum Erlernen
 
 
 
