@@ -60,9 +60,38 @@ Docker = Werkzeug für Container
 
 ### Docker installieren
 ```bash
-root@pt-lab01:~# apt install docker.io -y
+root@datsrv1:~# apt install docker.io
 ```
 
+### Ubuntu container mit docher
+docker run -it ubuntu bash
+
+👉 Image ubuntu wird geladen (falls nicht vorhanden → Download)
+👉 daraus wird ein Container gestartet
+👉du bist direkt im System drin
+
+
+```bash
+root@datsrv1:~# docker run -it ubuntu bash
+Unable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+b40150c1c271: Pull complete
+92842f25412d: Download complete
+Digest: sha256:c4a8d5503dfb2a3eb8ab5f807da5bc69a85730fb49b5cfca2330194ebcc41c7b
+Status: Downloaded newer image for ubuntu:latest
+root@204c34995ed3:/#
+root@204c34995ed3:/#
+root@204c34995ed3:/# who
+who     whoami
+root@204c34995ed3:/# who
+who     whoami
+root@204c34995ed3:/# whoami
+root
+root@204c34995ed3:/# hostname
+204c34995ed3
+root@204c34995ed3:/#
+exit
+```
 
 
 
