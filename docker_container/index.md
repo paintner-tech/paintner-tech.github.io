@@ -23,7 +23,9 @@ Ein Container ist **kein Tool**, sondern eine Technik.
   - cgroups (Ressourcen)
 
 👉 Kein eigenes Betriebssystem  
+
 👉 Kein eigener Kernel  
+
 👉 Sehr leichtgewichtig
 
 **Merksatz:**  
