@@ -92,3 +92,75 @@ ptops@pt-lab01:/var/repos/warmstandby$
 
 ```
 
+# Zusätzliches Target einrichten
+Von einem Repo auf zwei andere pushen
+
+Remote anzeigen
+```bash
+ptops@pt-lab01:/var/warmstandby$ git remote -v
+origin  git@github.com:paintner-tech/warmstandby.git (fetch)
+origin  git@github.com:paintner-tech/warmstandby.git (push)
+```
+
+Zweites Target eintragen
+```bash
+ptops@pt-lab01:/var/warmstandby$ git remote add rechner2 root@ip:/prj/13_warmstandby/bare
+```
+
+Auf dem Zielrechner ein bare Repo initalisieren
+```bash
+ptops@rechner2:/prj/13_warmstandby/bare$ git init --bare
+```
+
+Repo pushen
+```bash
+ptops@pt-lab01:/var/warmstandby$ git push rechner2 master
+```
+
+Arbeitsverzeichnis clonen
+```bash
+ptops@rechner2:/prj/13_warmstandby$ git clone bare work
+Klone nach 'work' ...
+Fertig.
+```
+
+## Änderungen verteilen
+
+git push nach rechner2
+```bash
+ptops@pt-lab01:/var/warmstandby$ git push rechner2
+ptops@192.0.2.10's password:
+Objekte aufzählen: 13, fertig.
+Zähle Objekte: 100% (13/13), fertig.
+Delta-Kompression verwendet bis zu 2 Threads.
+Komprimiere Objekte: 100% (6/6), fertig.
+Schreibe Objekte: 100% (7/7), 519 Bytes | 519.00 KiB/s, fertig.
+Gesamt 7 (Delta 5), Wiederverwendet 0 (Delta 0), Pack wiederverwendet 0
+To 192.0.2.10:/prj/13_warmstandby/bare
+   6952d88..baf6210  master -> master
+```
+
+auf Rechner 2 ins work directory wechseln und git pull ausführen
+
+```bash
+ptops@rechner2:/prj/13_warmstandby/work$ git pul
+git: 'pul' ist kein Git-Befehl. Siehe 'git --help'.
+
+Die ähnlichsten Befehle sind
+        pull
+        push
+ptops@rechner2:/prj/13_warmstandby/work$ git pull
+remote: Objekte aufzählen: 13, Fertig.
+remote: Zähle Objekte: 100% (13/13), Fertig.
+remote: Komprimiere Objekte: 100% (6/6), Fertig.
+remote: Gesamt 7 (Delta 5), Wiederverwendet 0 (Delta 0)
+Entpacke Objekte: 100% (7/7), Fertig.
+Von /prj/13_warmstandby/bare
+   6952d88..baf6210  master     -> origin/master
+Aktualisiere 6952d88..baf6210
+Fast-forward
+ .../opt/pecom/warmstandby/control/data_demo.py~    | 305 ---------------------
+ 1 file changed, 305 deletions(-)
+```
+
+
