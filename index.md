@@ -11,6 +11,8 @@ Hier sammle ich praxisnahe Anleitungen und Erfahrungen rund um:
 * einfache HA- / Warm-Standby-Konzepte
 * Python Skript Sprache
 * git
+* Hyper-V
+* Java
 
 Über mich
 Ich arbeite seit Jahren mit Linux-Systemen in produktiven Umgebungen und dokumentiere hier Lösungen, die in der Praxis funktionieren – nicht nur in Tutorials.
