@@ -1,47 +1,61 @@
+---
+layout: default
+title: sshfs
+---
 
 
-SSHFS
+# SSHFS
 
 Wie immer ist dies kein komplettes Tutorial.
 Es werden lediglich Dinge dokumentiert, über die ich gestolpert bin, sowie Lösungen und Empfehlungen aus der Praxis.
 
-Was ist SSHFS?
+# Was ist SSHFS?
 
 SSHFS (SSH Filesystem) ermöglicht es, entfernte Verzeichnisse über SSH lokal einzubinden („mounten“). Dadurch können Dateien auf entfernten Systemen genutzt werden, als würden sie sich direkt auf dem lokalen Rechner befinden.
 
 Das ist besonders praktisch für:
 
-Arbeiten auf entfernten Linux-Systemen
-Zugriff auf ESXi-Datastores
-direkte Verarbeitung großer Dateien ohne vorheriges Kopieren
-Migrationen und Backups
-Nutzung von Tools wie qemu-img, rsync oder Skripten direkt über SSH
-Installation
+* Arbeiten auf entfernten Linux-Systemen
+* Zugriff auf ESXi-Datastores
+* direkte Verarbeitung großer Dateien ohne vorheriges Kopieren
+* Migrationen und Backups
+* Nutzung von Tools wie qemu-img, rsync oder Skripten direkt über SSH
+
+# Installation
 
 Debian / Ubuntu:
 
+```bash
 apt install sshfs
-Beispiel: ESXi-Datastore mounten
+```
+# Beispiel: ESXi-Datastore mounten
+
+```bash
 mkdir /mnt/esxi
 sshfs root@ESXI:/vmfs/volumes/datastore1 /mnt/esxi
-
+```
 Danach kann direkt auf die Dateien unter /mnt/esxi zugegriffen werden.
 
 Beispielsweise:
 
+```bash
 ls -l /mnt/esxi
-Beispiel: direkte Nutzung mit qemu-img
+```
+
+# Beispiel: direkte Nutzung mit qemu-img
 
 Praktisch bei VMware → Hyper-V Migrationen:
 
+```bash
 qemu-img convert -p \
 -f vmdk \
 /mnt/esxi/server.vmdk \
 -O vhdx \
 -o subformat=dynamic \
 ./server.vhdx
+```
 
-Vorteil:
+## Vorteil:
 Die VMDK muss vorher nicht lokal kopiert werden.
 
 Unmounten
@@ -50,13 +64,15 @@ fusermount -u /mnt/esxi
 oder:
 
 umount /mnt/esxi
-Vorteile von SSHFS
-keine zusätzliche Freigabe notwendig
-nutzt vorhandene SSH-Zugänge
-verschlüsselte Verbindung
-ideal für Administration und Migrationen
-entfernte Dateien können direkt verarbeitet werden
-spart oft Zeit und Speicherplatz
-Hinweis
 
+# Vorteile von SSHFS
+
+* keine zusätzliche Freigabe notwendig
+* nutzt vorhandene SSH-Zugänge
+* verschlüsselte Verbindung
+* ideal für Administration und Migrationen
+* entfernte Dateien können direkt verarbeitet werden
+* spart oft Zeit und Speicherplatz
+
+# Hinweis
 Gerade bei großen VMware-Disks ist SSHFS sehr hilfreich, da Tools wie qemu-img direkt auf die entfernten Dateien zugreifen können, ohne diese vorher vollständig lokal kopieren zu müssen.
