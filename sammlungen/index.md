@@ -13,3 +13,4 @@ Kurze, praxisnahe Beispiele für häufig verwendete Linux-Kommandos.
 - [lsync – Kurz & Knapp](lsyncd-kurz.html)
 - [systemctl – Services verwalten](../systemctl/)
 - [cups – CUPA in alten Linux distributionen](cups_ppd.html)
+- [sshfs – Filesystem einbinden über shh ](sshfs.html)
