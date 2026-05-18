@@ -17,13 +17,12 @@ Hier sammle ich praxisnahe Anleitungen und Erfahrungen rund um:
 Über mich
 Ich arbeite seit Jahren mit Linux-Systemen in produktiven Umgebungen und dokumentiere hier Lösungen, die in der Praxis funktionieren – nicht nur in Tutorials.
 
-## Projekte
-- coming soon
   
 ## Technische Dokumentationen
 - [Python – Praxis-Doku](python/index.md)
 - [Git – Praxis-Doku](gitdoku/index.md)
 - [Proxmox - Praxis-Doku](proxmox/index.md)
+- [Hyper-V - Praxis-Doku](hyper-v/index.md)
 - [Docker und Container](docker_container/index.md)
 - [Quick Reference – Cheat Sheets](sammlungen/index.md)
 - [JAVA – Bespiele aus der Praxis](java/index.md)
