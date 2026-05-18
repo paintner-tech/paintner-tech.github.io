@@ -38,3 +38,6 @@ Wichtiger Hinweis
 Checkpoints sind kein vollwertiges Backup.
 Sie sollten nicht dauerhaft bestehen bleiben, da Hyper-V dabei zusätzliche AVHDX-Differenzdateien erzeugt, die Speicherplatz verbrauchen und die Performance beeinflussen können.
 
+## Artikel
+- [Restore in Hyper-V ohne echte CF-/USB-Karte](restore_ohne_passthroug.html)
+
