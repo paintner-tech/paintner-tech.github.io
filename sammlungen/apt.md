@@ -1,6 +1,6 @@
 ---
 layout: default
-title: journalctl
+title: apt
 ---
 
 [Home](/) . [Technische Dokumentation](/#technische-dokumentation)
