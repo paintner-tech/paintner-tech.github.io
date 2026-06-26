@@ -163,4 +163,39 @@ Fast-forward
  1 file changed, 305 deletions(-)
 ```
 
+# GIT commit Rückgängig machen
+Es wurde ein commit gemacht, der Fehlerhaften Dateien enthielt und so nicht in die Entwicklungsreihenfolge passt. 
+
+Backup vom Branch erstellen und mit reset auf alten commit zurück.
+## Commit zurücksetzen
+```bash
+ptops@pt-lab01:/var/warmstandby$ git branch backup-eb32d2a
+ptops@pt-lab01:/var/warmstandby$ git reset --hard 1f34cb0
+```
+Commit pushen
+## Commit pushen
+```
+ptops@pt-lab01:/var/warmstandby$ git push --force-with-lease origin master
+hostkeys_find_by_key_hostfile: hostkeys_foreach failed for /home/ptops/.ssh/known_hosts: Permission denied
+The authenticity of host '[ssh.github.com]:443 ([140.82.121.36]:443)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Failed to add the host to the list of known hosts (/home/ptops/.ssh/known_hosts).
+client_input_hostkeys: hostkeys_foreach failed for /home/ptops/.ssh/known_hosts: Permission denied
+Gesamt 0 (Delta 0), Wiederverwendet 0 (Delta 0), Pack wiederverwendet 0
+To github.com:paintner-tech/warmstandby.git
+ + eb32d2a...1f34cb0 master -> master (forced update)
+ptops@pt-lab01:/var/warmstandby$
+```
+
+## Backup branch
+```
+
+ptops@pt-lab01:/var/warmstandby$ git branch
+  backup-eb32d2a
+* master
+ptops@pt-lab01:/var/warmstandby$
+```
+
 
