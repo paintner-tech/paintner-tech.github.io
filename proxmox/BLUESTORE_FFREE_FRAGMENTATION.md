@@ -57,7 +57,7 @@ osd.4: {
 osd.5: {
     "fragmentation_rating": 0.017182322032072681
 }
-MGWS-BSP_pve1:/root #
+pve1:/root #
 ```
 
 Je näher der Wert an 1, desto stärker die Fragmentierung.
