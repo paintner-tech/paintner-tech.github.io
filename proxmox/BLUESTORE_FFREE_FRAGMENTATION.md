@@ -94,5 +94,44 @@ pveceph osd destroy 0 --cleanup entfernt osd.0 aus Ceph und räumt seine Datenst
             2 OSD(s)
             Degraded data redundancy: 182873/3997866 objects degraded (4.574%), 161 pgs degraded
 
+```code
+pve1:/root # pveceph osd destroy 0 --cleanup
+destroy OSD osd.0
+Remove osd.0 from the CRUSH map
+Remove the osd.0 authentication key.
+Remove OSD osd.0
+.....
 ```
-![Status](images/ceph_status_stopped.png)
+
+![Status](images/ceph_status_removed.png)
+
+scrubbing+deepist eine gründliche Datenprüfung durch Ceph: Es liest die Objekte einer PG und prüft ihre Prüfsummen, um beschädigte oder unterschiedliche Kopien zu erkennen. Das läuft regelmäßig automatisch und ist kein Hinweis auf einen Fehler.
+
+## 4. osd neu erstellen
+
+```code 
+pve1:/root # pveceph osd create /dev/sdb
+create OSD on /dev/sdb (bluestore)
+wiping block device /dev/sdb
+200+0 records in
+200+0 records out
+209715200 bytes (210 MB, 200 MiB) copied, 0.59898 s, 350 MB/s
+....
+```
+
+## 5. Wiederaufbau abwarten
+Ceph stellt jetzt die fehlenden Kopien auf dem neuen OSD wiederher.
+
+Mit ceph -s den Fortschritt prüfen. Erst weitermachen, wenn alle PGs wieder active+clean sind.
+```code
+MGWS-BSP_pve1:/root # ceph status
+  cluster:
+    id:     98c4f89d-3bd7-487f-8c3b-7483b5090f5e
+    health: HEALTH_WARN
+            2 OSD(s)
+            Degraded data redundancy: 112555/3997866 objects degraded (2.815%), 125 pgs degraded, 125 pgs undersized
+```
+
+oder über GUI prüfen
+
+![Status](images/ceph_status_wiederaufbau.png)
