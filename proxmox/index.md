@@ -43,6 +43,8 @@ Dadurch eignet sich Proxmox sowohl für **Homelabs**, **Testumgebungen** als auc
 # Inhalte
 
 - [Lokalen Proxmox Mirror erstellen](lokal_mirror.html)
+- [Proxmox: Nützliches](nützliches.html)
+- [Proxmox: Probleme und Lösungen](probleme.html)
 - [Pegaprox: Proxmox Cluster Managment](pegaprox.html)
 - [Pegaprox als lxc container migrieren](pegaprox_lxc.html)
-- [Proxmox: Nützliches](nützliches.html)
+
