@@ -132,6 +132,6 @@ MGWS-BSP_pve1:/root # ceph status
             Degraded data redundancy: 112555/3997866 objects degraded (2.815%), 125 pgs degraded, 125 pgs undersized
 ```
 
-oder über GUI prüfen
+oder über GUI prüfen. Man sieht hier das das der Wiederaufbau in Arbeit ist.
 
 ![Status](images/ceph_status_wiederaufbau.png)
