@@ -1,9 +1,15 @@
 ---
 layout: default
-title: Proxmox – Nützliches
+title: Proxmox – Defrakmentierung BLUESTORE_FFREE_FRAGMENTATION
 ---
 
 [Home](/) · [Technische Dokumentation](/#technische-dokumentation)
+
+# Einleitung
+Eine Defragmentierung wie unter Windows gibt es für BlueStore nicht. Um die Fragmentierung zu beseitigen, wird der betroffene OSD entfernt und auf der Platte neu angelegt. Ceph baut die fehlenden Datenkopien danach automatisch wieder auf.
+
+> [!IMPORTANT]
+> Die folgenden Schritte zeigen, wie ein OSD entfernt und neu angelegt wird. Im Beispiel verwenden wir osd.0 und die lokale Platte /dev/sdb. OSD-Nummer und Gerätename müssen zum jeweiligen Setup passen. Die Anleitung ist ein Beispiel und kann nicht überall 1:1 übernommen werden.
 
 # Problem
 Der Cluster meldet HEALTH_WARN, zeigt aber zunächst keinen klaren Grund.
