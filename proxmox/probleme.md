@@ -14,3 +14,4 @@ Hier dokumentiere ich Probleme aus dem Proxmox-Alltag und die Schritte, mit dene
 Problem: Der Cluster zeigt HEALTH_WARN ohne weitere Details an. ceph health detail meldet BLUESTORE_FREE_FRAGMENTATION.
 Das bedeutet, dass der freie Speicherplatz auf den betroffenen OSDs fragmentiert ist. Eine Defragmentierung wie unter Windows gibt es dafür nicht.
 
+BLUESTORE_FFREE_FRAGMENTATION.md
