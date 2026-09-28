@@ -87,6 +87,10 @@ pve1:/root # ceph status
   cluster:
     id:     98c4f89d-3bd7-487f-8c3b-7483b5090f5e
     health: HEALTH_WARN
+```
+## 4. osd entfernen
+
+pveceph osd destroy 0 --cleanup entfernt osd.0 aus Ceph und räumt seine Datenstrukturen auf der zugeordneten Platte /dev/sdb auf pve1 ab. --cleanup sorgt dafür, dass die SSD anschließend wieder als neuer OSD verwendet werden kann
             2 OSD(s)
             Degraded data redundancy: 182873/3997866 objects degraded (4.574%), 161 pgs degraded
 
