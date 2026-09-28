@@ -77,4 +77,18 @@ pve1:/root # ceph osd out 0
 marked out osd.0.
 ```
 
+![Status](images/cpeh_status.png)
 
+
+## 3. osd stoppen
+```code
+pve1:/root # pveceph stop --service osd.0
+pve1:/root # ceph status
+  cluster:
+    id:     98c4f89d-3bd7-487f-8c3b-7483b5090f5e
+    health: HEALTH_WARN
+            2 OSD(s)
+            Degraded data redundancy: 182873/3997866 objects degraded (4.574%), 161 pgs degraded
+
+```
+![Status](images/ceph_status_stopped.png)
