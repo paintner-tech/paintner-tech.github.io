@@ -6,9 +6,9 @@ title: Docker / compose
 [Home](/) . [Technische Dokumentation](/#technische-dokumentation)
 
 # Einleitung
-Mit Docker Compose werden Container in einer YAML-Datei definiert und verwaltet. Im folgenden wird ein Nginx-Webserver mit einem eingebundenen Webseitenordner eingerichtet, gestartet und gestoppt.
+Mit Docker Compose werden Container in einer YAML-Datei definiert und verwaltet. Im folgenden wird ein Nginx-Webserver mit einem eingebundenen Webseitenordner eingerichtet, gestartet und gestoppt. Der Unterschied zum Container ohne Comppose: Bei docker exec wird der Containernamen angegeben. Bei docker compose exec wird der Dienstnamen aus der Compose-Datei verwendet.
 
-Hier ist beschrieben, wie man eine webserver ohne compose erstellt: [Docker: Webserver](./webserver)
+Hier ist beschrieben, wie man eine Webserver ohne compose erstellt: [Docker: Webserver](./webserver)
 
 ## Konfiurationsdatei erstellen
 
@@ -81,6 +81,22 @@ ptops@pt-lab01:~/docker-uebungen/config$ sudo docker compose up -d
  ✔ Container config-webserver82-1  Started                                                                                                                                      0.5s
 ptops@pt-lab01:~/docker-uebungen/config$
 ```
+
+## Logs live ansehen
+
+Zugriff auf Webserver auf ip
+```code
+ptops@pt-lab01:~/docker-uebungen/config$ sudo docker compose logs -f webserver82
+ebserver82-1  | ip - - [07/Oct/2026:12:47:40 +0000] "GET / HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:157.0) Gecko/20100101 Firefox/157.0" "-"
+```
+
+## Eine Shell im Container öffnen
+
+```code
+ptops@pt-lab01:~/docker-uebungen/config$ sudo docker compose exec webserver82 sh
+```
+
+
 
 
 
