@@ -5,6 +5,10 @@ title: Docker / compose
 
 [Home](/) . [Technische Dokumentation](/#technische-dokumentation)
 
+* TOC
+{:toc}
+
+
 # Einleitung
 Mit Docker Compose werden Container in einer YAML-Datei definiert und verwaltet. Im folgenden wird ein Nginx-Webserver mit einem eingebundenen Webseitenordner eingerichtet, gestartet und gestoppt. Der Unterschied zum Container ohne Comppose: Bei docker exec wird der Containernamen angegeben. Bei docker compose exec wird der Dienstnamen aus der Compose-Datei verwendet.
 
