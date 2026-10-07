@@ -145,6 +145,18 @@ ptops@pt-lab01:~/docker-uebungen/webseite$ sudo docker run -d --name webserver2 
 | `target=/usr/share/nginx/html` | Pfad, unter dem der Container den Ordner sieht |
 | `readonly` | Der Container darf die Dateien lesen, aber nicht verändern |
 
+### Webserver testen
+![port8081](images/port8081.png)
+
+### Änderung außerhalb des Container
+
+```code
+ptops@pt-lab01:~/docker-uebungen/webseite$ printf '<h1>Direkt auf der VM geaendert!</h1>\n' > ~/docker-uebungen/webseite/index.html
+```
+![port8081neu](images/port8081neu.png)
+
+
+
 ## Zusammenfassung
 
 | Befehl | Beschreibung |
