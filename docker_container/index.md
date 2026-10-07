@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Docker: Webserver erstellen
+title: Webserver erstellen
 ---
 
 [Home](/) . [Technische Dokumentation](/#technische-dokumentation)
