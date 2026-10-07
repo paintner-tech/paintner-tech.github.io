@@ -1,4 +1,7 @@
 theme: jekyll-theme-cayman
 title: paintner-tech
 description: Praxisnahe Linux / Proxmox / Monitoring Doku
-toc_levels: "2,3"
+
+markdown: kramdown
+kramdown:
+  toc_levels: "1,2,3"
