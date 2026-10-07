@@ -155,7 +155,8 @@ ptops@pt-lab01:~/docker-uebungen/webseite$ printf '<h1>Direkt auf der VM geaende
 ```
 ![port8081neu](images/port8081neu.png)
 
-
+Die Änderung erscheint ohne Containerneustart, weil Nginx dieselbe eingebundene Datei liest.
+Die Datei bleibt jetzt auch erhalten, wenn webserver2 gelöscht wird.
 
 ## Zusammenfassung
 
