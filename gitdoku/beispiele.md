@@ -198,4 +198,32 @@ ptops@pt-lab01:/var/warmstandby$ git branch
 ptops@pt-lab01:/var/warmstandby$
 ```
 
+## Änderung aus anderem Repo übernehmen
+Beim Ausführen des Befehls git pull origin main --rebase wurden die neuesten Änderungen aus dem Remote-Repository (origin/main) geholt und sauber in den lokalen Arbeitsstand integriert.
+
+Änderungen holen:
+```bash
+root@datsrv1:~/stock_dashboard# git pull origin main --rebase
+remote: Enumerating objects: 43, done.
+remote: Counting objects: 100% (43/43), done.
+remote: Compressing objects: 100% (38/38), done.
+remote: Total 40 (delta 18), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (40/40), 13.56 KiB | 631.00 KiB/s, done.
+From github.com:paintner-tech/stock_dashboard
+ * branch            main       -> FETCH_HEAD
+   16ac295..4918ae3  main       -> origin/main
+Updating 16ac295..4918ae3
+Fast-forward
+ docs/Doku.md |  91 ++++++++++++++++++++++++++++++---
+ docs/Math.md | 159 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 244 insertions(+), 6 deletions(-)
+ create mode 100644 docs/Math.md
+root@datsrv1:~/stock_dashboard#
+```
+
+
+
+
+
+
 
