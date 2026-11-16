@@ -62,6 +62,7 @@ Statt eine Datei mehrfach mit `final.sh`, `final2.sh`, `wirklich_final.sh` zu sp
 
 - [Git – Grundlagen](./grundlagen_git)
 - [Git – Beispiele](./beispiele)
+- [Git – Arbeiten mit work und bare](./work_bare)
 
 ---
 
